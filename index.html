@@ -10,63 +10,64 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
+<header class="header" id="home">
+    <div class="container  flex header-container">
         <a href="#" class="header-logo"><img src="img/logo.svg" alt="Logo" class="header-logo"></a>
+
+        <nav class="header-nav">
+            <ul class="header-list flex list-reset">
+                <li class="header-list-item">
+                    <a href="#" class="header-link">
+                        Home
+                    </a>
+                </li>
+                <li class="header-list-item">
+
+                    <a href="#services" class="header-link">
+                        Services
+                    </a>
+                </li>
+                <li class="header-list-item">
+
+                    <a href="#articles" class="header-link">
+                        Articles
+                    </a>
+                </li>
+                <li class="header-list-item">
+
+                    <a href="#clients" class="header-link">
+                        Clients
+                    </a>
+                </li>
+                <li class="header-list-item">
+
+                    <a href="#contacts" class="header-link">
+                        Contacts
+                    </a>
+                </li>
+                <li class="header-list-item">
+
+                    <a href="#join-us" class="header-link">
+                        Join us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn btn-header btn-reset">Free trial</button>
     </div>
-    <nav class="header-nav">
-        <ul class="header-list list-reset">
-            <li class="header-list-item">
-                <a href="#" class="header-link">
-                    Home
-                </a>
-            </li>
-            <li class="header-list-item">
-
-                <a href="#services" class="header-link">
-                    Services
-                </a>
-            </li>
-            <li class="header-list-item">
-
-                <a href="#articles" class="header-link">
-                    Articles
-                </a>
-            </li>
-            <li class="header-list-item">
-
-                <a href="#clients" class="header-link">
-                    Clients
-                </a>
-            </li>
-            <li class="header-list-item">
-
-                <a href="#contacts" class="header-link">
-                    Contacts
-                </a>
-            </li>
-            <li class="header-list-item">
-
-                <a href="#join-us" class="header-link">
-                    Join us
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <button class="btn btn-header">Free trial</button>
 </header>
 <main class="main">
     <section id="hero" class="hero">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content flex">
                 <h1 class="hero-title">
                     This is&nbsp;simply a&nbsp;smarter way to&nbsp;make your legal online
                 </h1>
-                <p class="hero-desc">
+                <p class="hero-descr">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut&nbsp;laoreet
                     dolore.
                 </p>
-                <button class="btn hero-btn">
+                <button class="btn hero-btn btn-reset">
                     FREE 30&nbsp;DAY TRIAL
                 </button>
                 <span class="hero-secure">
@@ -75,12 +76,12 @@ SSL secured connection
             </div>
         </div>
     </section>
-    <section id="services" class="services">
+    <section id="services" class="services section-offset">
         <div class="container">
-            <h2 class="section-title servces-title">Services</h2>
-            <p class="section-descr sevices-descr">Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your
+            <h2 class="section-title services-title">Services</h2>
+            <p class="section-descr services-descr">Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your
                 end-of-life plans.</p>
-            <ul class="services-items">
+            <ul class="services-items list-reset flex">
                 <li class="services-item">
                     <svg class="services-item-icon" width="68" height="66" viewBox="0 0 68 66" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
@@ -136,13 +137,13 @@ SSL secured connection
             </ul>
         </div>
     </section>
-    <section id="articles" class="articles">
+    <section id="articles" class="articles section-offset">
         <div class="container">
             <h2 class="section-title article-title">
                 Articles
             </h2>
-            <ul class="articles-list">
-                <li class="articles-item">
+            <ul class="articles-list list-reset flex">
+                <li class="articles-item flex">
                     <article class="block-preview">
                         <img src="img/blog-1.jpg" alt="" class="blog-preview-image">
                         <div class="blog-peview-text">
@@ -210,12 +211,12 @@ SSL secured connection
         </div>
 
     </section>
-    <section id="clients" class="clients">
+    <section id="clients" class="clients section-offset">
         <div class="container">
             <h2 class="section-title clients-title">
                 Clients
             </h2>
-            <ul class="clients-list">
+            <ul class="clients-list list-reset">
                 <li class="clients-item">
                     <p class="clients-item-descr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloremque dolorum eaque
@@ -277,14 +278,14 @@ SSL secured connection
             </ul>
         </div>
     </section>
-    <section id="contacts" class="contacts">
+    <section id="contacts" class="contacts section-offset">
         <div class="container">
             <h2 class="section-title contacts-title">
                 Contacts
             </h2>
             <address class="contacts-address">
-                <ul class="contacts-list">
-                    <li class="contacts-item">
+                <ul class="contacts-list list-reset flex">
+                    <li class="contacts-item flex">
                         <strong class="contacts-item-caption">
                             Visit Us
                         </strong>
@@ -292,7 +293,7 @@ SSL secured connection
                             Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit.
                         </p>
                     </li>
-                    <li class="contacts-item">
+                    <li class="contacts-item flex">
                         <strong class="contacts-item-caption">
                             Call Us
                         </strong>
@@ -303,7 +304,7 @@ SSL secured connection
                             +7 (123) 456-78-90
                         </a>
                     </li>
-                    <li class="contacts-item">
+                    <li class="contacts-item flex">
                         <strong class="contacts-item-caption">
                             Email Us
                         </strong>
