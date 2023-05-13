@@ -18,7 +18,6 @@ p {
     margin: 0;
 }
 
-h2
 h3 {
     margin: 0;
 }
@@ -33,7 +32,10 @@ body {
 }
 
 /* global */
-
+@font-face {
+    font-family: 'OpenSans' ;
+    src: local('OpenSans-Regular'), url("../fonts/OpenSansLight.woff");
+}
 .list-reset {
     margin: 0;
     padding: 0;
@@ -173,6 +175,86 @@ body {
     margin-right: 30px;
 }
 
+.blog-preview-image {
+    object-fit: cover;
+}
+
+.blog-preview-text {
+    padding-left: 30px;
+}
+
+.blog-preview-time {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;    /* identical to box height, or 15px */
+    color: #787878;
+}
+.blog-preview-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;    /* identical to box height, or 26px */
+    color: #1C1C1C;
+}
+
+.blog-preview-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;    /* or 21px */
+    color: #787878;
+}
+
+
+/* clients */
+
+.clients-item {
+    width: 370px;
+    flex-direction: column;
+    padding: 50px 36px;
+    padding-bottom: 30px;
+    border: 1px solid #6B6B6B opacity 0.3;
+    border-radius: 5px;
+}
+
+.clients-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.clients-item-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%; /* or 25px */
+    color: #787878;
+    margin-bottom: 62px;
+}
+
+.clients-name {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;    /* identical to box height, or 31px */
+    color: #1C1C1C;
+}
+
+.clients-post {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;    /* or 25px */
+    color: #787878;
+}
+
+.clients-user {
+    margin-top: auto;
+    align-items: center;
+}
+
+.clients-avatar {
+    flex-shrink: 0;
+    width: 67px;
+    margin-right: 17px;
+}
+
 
 
 /* contacts */
@@ -206,4 +288,28 @@ font-weight: 400;
 font-size: 14px;
 line-height: 180%;/* or 25px */
 color: #787878;
+}
+
+/* footer */
+
+.footer {
+    padding: 42px 0;
+}
+
+.footer-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 25px;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 28px;
 }
